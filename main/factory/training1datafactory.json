@@ -1,0 +1,9 @@
+{
+	"name": "training1datafactory",
+	"location": "spaincentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b8f5dd26-43c7-47ad-bf11-0e50620b0888",
+		"tenantId": "489a2c52-f7e5-4703-8935-d2c83fee1369"
+	}
+}
