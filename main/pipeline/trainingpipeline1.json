@@ -3,7 +3,19 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Ingesta_heartsdf",
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "CopyDataHearts",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -67,18 +79,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Execute Pipeline1",
-				"type": "ExecutePipeline",
-				"dependsOn": [],
-				"policy": {
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"waitOnCompletion": true
-				}
 			}
 		],
 		"annotations": []
