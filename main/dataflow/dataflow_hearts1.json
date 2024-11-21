@@ -1,0 +1,24 @@
+{
+	"name": "dataflow_hearts1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "HeartsModified",
+						"type": "DatasetReference"
+					},
+					"name": "Fuente1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> Fuente1"
+			]
+		}
+	}
+}
