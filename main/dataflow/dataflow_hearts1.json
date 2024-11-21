@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "Hearts",
+						"referenceName": "HeartsModified",
 						"type": "DatasetReference"
 					},
 					"name": "Fuente1"
@@ -15,23 +15,7 @@
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
-				"source(output(",
-				"          age as string,",
-				"          sex as string,",
-				"          cp as string,",
-				"          trestbps as string,",
-				"          chol as string,",
-				"          fbs as string,",
-				"          restecg as string,",
-				"          thalach as string,",
-				"          exang as string,",
-				"          oldpeak as string,",
-				"          slope as string,",
-				"          ca as string,",
-				"          thal as string,",
-				"          target as string",
-				"     ),",
-				"     allowSchemaDrift: true,",
+				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> Fuente1"
 			]
